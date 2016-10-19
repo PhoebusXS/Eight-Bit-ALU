@@ -1,0 +1,170 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -o
+mojo_top_0.twr -v 30 -l 30 mojo_top_0_routed.ncd mojo_top_0.pcf
+
+Design file:              mojo_top_0_routed.ncd
+Physical constraint file: mojo_top_0.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report, limited to 30 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+io_dip[0]      |led[0]         |   14.749|
+io_dip[0]      |led[1]         |   13.032|
+io_dip[0]      |led[2]         |   13.445|
+io_dip[0]      |led[3]         |   13.150|
+io_dip[0]      |led[4]         |   12.760|
+io_dip[0]      |led[5]         |   12.894|
+io_dip[0]      |led[6]         |   13.119|
+io_dip[0]      |led[7]         |   13.233|
+io_dip[1]      |led[0]         |   14.603|
+io_dip[1]      |led[1]         |   12.903|
+io_dip[1]      |led[2]         |   13.401|
+io_dip[1]      |led[3]         |   13.117|
+io_dip[1]      |led[4]         |   12.708|
+io_dip[1]      |led[5]         |   12.842|
+io_dip[1]      |led[6]         |   13.067|
+io_dip[1]      |led[7]         |   13.181|
+io_dip[2]      |led[0]         |   14.596|
+io_dip[2]      |led[2]         |   13.201|
+io_dip[2]      |led[3]         |   12.913|
+io_dip[2]      |led[4]         |   12.508|
+io_dip[2]      |led[5]         |   12.642|
+io_dip[2]      |led[6]         |   12.867|
+io_dip[2]      |led[7]         |   12.981|
+io_dip[3]      |led[0]         |   14.119|
+io_dip[3]      |led[3]         |   12.732|
+io_dip[3]      |led[4]         |   12.384|
+io_dip[3]      |led[5]         |   12.518|
+io_dip[3]      |led[6]         |   12.743|
+io_dip[3]      |led[7]         |   12.857|
+io_dip[4]      |led[0]         |   13.381|
+io_dip[4]      |led[4]         |   11.827|
+io_dip[4]      |led[5]         |   11.947|
+io_dip[4]      |led[6]         |   12.304|
+io_dip[4]      |led[7]         |   12.411|
+io_dip[5]      |led[0]         |   12.735|
+io_dip[5]      |led[5]         |   12.094|
+io_dip[5]      |led[6]         |   12.536|
+io_dip[5]      |led[7]         |   12.654|
+io_dip[6]      |led[0]         |   12.827|
+io_dip[6]      |led[6]         |   12.358|
+io_dip[6]      |led[7]         |   12.472|
+io_dip[7]      |led[0]         |   13.068|
+io_dip[7]      |led[7]         |   12.576|
+io_dip[8]      |led[0]         |   13.995|
+io_dip[8]      |led[1]         |   12.871|
+io_dip[8]      |led[2]         |   13.284|
+io_dip[8]      |led[3]         |   12.994|
+io_dip[8]      |led[4]         |   12.607|
+io_dip[8]      |led[5]         |   12.741|
+io_dip[8]      |led[6]         |   12.966|
+io_dip[8]      |led[7]         |   13.080|
+io_dip[9]      |led[0]         |   13.841|
+io_dip[9]      |led[1]         |   12.460|
+io_dip[9]      |led[2]         |   13.052|
+io_dip[9]      |led[3]         |   12.750|
+io_dip[9]      |led[4]         |   12.306|
+io_dip[9]      |led[5]         |   12.440|
+io_dip[9]      |led[6]         |   12.665|
+io_dip[9]      |led[7]         |   12.779|
+io_dip[10]     |led[0]         |   14.065|
+io_dip[10]     |led[2]         |   12.961|
+io_dip[10]     |led[3]         |   12.673|
+io_dip[10]     |led[4]         |   12.268|
+io_dip[10]     |led[5]         |   12.402|
+io_dip[10]     |led[6]         |   12.627|
+io_dip[10]     |led[7]         |   12.741|
+io_dip[11]     |led[0]         |   13.699|
+io_dip[11]     |led[3]         |   12.323|
+io_dip[11]     |led[4]         |   11.975|
+io_dip[11]     |led[5]         |   12.109|
+io_dip[11]     |led[6]         |   12.334|
+io_dip[11]     |led[7]         |   12.448|
+io_dip[12]     |led[0]         |   13.404|
+io_dip[12]     |led[4]         |   11.436|
+io_dip[12]     |led[5]         |   11.556|
+io_dip[12]     |led[6]         |   11.913|
+io_dip[12]     |led[7]         |   12.020|
+io_dip[13]     |led[0]         |   12.725|
+io_dip[13]     |led[5]         |   11.910|
+io_dip[13]     |led[6]         |   12.352|
+io_dip[13]     |led[7]         |   12.470|
+io_dip[14]     |led[0]         |   12.474|
+io_dip[14]     |led[6]         |   12.565|
+io_dip[14]     |led[7]         |   12.679|
+io_dip[15]     |led[0]         |   12.313|
+io_dip[15]     |led[7]         |   11.904|
+io_dip[16]     |led[0]         |   15.061|
+io_dip[16]     |led[1]         |   14.869|
+io_dip[16]     |led[2]         |   15.173|
+io_dip[16]     |led[3]         |   14.932|
+io_dip[16]     |led[4]         |   14.509|
+io_dip[16]     |led[5]         |   14.643|
+io_dip[16]     |led[6]         |   14.868|
+io_dip[16]     |led[7]         |   14.982|
+io_dip[17]     |led[0]         |   14.732|
+io_dip[17]     |led[1]         |   14.233|
+io_dip[17]     |led[2]         |   14.537|
+io_dip[17]     |led[3]         |   14.296|
+io_dip[17]     |led[4]         |   13.873|
+io_dip[17]     |led[5]         |   14.007|
+io_dip[17]     |led[6]         |   14.299|
+io_dip[17]     |led[7]         |   14.417|
+io_dip[18]     |led[0]         |   14.425|
+io_dip[20]     |led[0]         |   14.000|
+io_dip[20]     |led[1]         |   14.132|
+io_dip[20]     |led[2]         |   14.237|
+io_dip[20]     |led[3]         |   14.264|
+io_dip[20]     |led[4]         |   13.733|
+io_dip[20]     |led[5]         |   13.696|
+io_dip[20]     |led[6]         |   13.658|
+io_dip[20]     |led[7]         |   13.763|
+io_dip[21]     |led[0]         |   14.178|
+io_dip[21]     |led[1]         |   14.459|
+io_dip[21]     |led[2]         |   14.701|
+io_dip[21]     |led[3]         |   14.591|
+io_dip[21]     |led[4]         |   14.197|
+io_dip[21]     |led[5]         |   14.092|
+io_dip[21]     |led[6]         |   14.054|
+io_dip[21]     |led[7]         |   13.666|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 19 23:10:14 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 218 MB
+
+
+

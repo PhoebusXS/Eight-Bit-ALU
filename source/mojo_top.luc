@@ -1,0 +1,52 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    output io_led [3][8],   // LEDs on IO Shield
+    output io_seg [8],      // 7-segment LEDs on IO Shield
+    output io_sel [4],      // Digit select on IO Shield
+    input io_dip [3][8]     // DIP switches on IO Shield
+  ) {
+  
+  sig rst;                  // reset signal
+  sig ans[8];
+  
+  adder myAdder;
+  comparer myComparer;
+
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    reset_conditioner reset_cond;
+  }
+  
+  always {
+    reset_cond.in = ~rst_n; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+    led = 8h00;             // turn LEDs off
+    io_led = 3x{{8h00}};    // turn LEDs off
+    io_seg = 8hff;          // turn segments off
+    io_sel = 4hf;           // select no digits
+    
+    myAdder.a[7:0] = io_dip[1];
+    myAdder.b[7:0] = io_dip[0];
+    myAdder.alufn[5:0] = io_dip[2][5:0];
+    
+    myComparer.alufn[5:0] = io_dip[2][5:0];
+    myComparer.z = myAdder.cmpz;
+    myComparer.v = myAdder.cmpv;
+    myComparer.n = myAdder.cmpn;
+    
+
+    case (io_dip[2][5:4]) {
+      b00:
+        ans = myAdder.ans;
+      b11:
+        ans = myComparer.ans;
+      default:
+        ans = 8b0;
+    }
+    
+    led = ans;
+  }    
+}

@@ -1,0 +1,37 @@
+module adder (
+    input alufn[6],
+    input a[8],
+    input b[8],
+    output ans[8], // 8-bit sum
+    output z, // ?zero
+    output v, // ?overflow
+    output n, // ?negative
+    output cmpz, // a - b ?zero
+    output cmpv, // a - b ? overflow
+    output cmpn // a - b ? negative
+  ) {
+
+  sig sum[9]; // true sum (w/ overflow)
+  sig sub[9]; // always (a - b) to compute z, v, n
+  
+  always {
+    sub = a - b;
+    case(alufn[1:0]) {
+      b00: // +
+        sum = a + b;
+      b01: // -
+        sum = a - b;
+      default:
+        sum = a + b;
+    }
+    
+    ans = sum[7:0];
+    z = ~|sum; // check if true sum has 0 on every bit
+    v = a[7] & b[7] & ~sum[7] | ~a[7] & ~b[7] & sum[7];
+    n = sum[7];
+    cmpz = ~|sub;
+    // subtraction overflow: pos - neg --> neg || neg - pos --> pos
+    cmpv = a[7] & ~b[7] & ~sub[7] | ~a[7] & b[7] & sub[7];
+    cmpn = sub[7];
+  }
+}
