@@ -1,0 +1,22 @@
+module logic_operator (
+    input alufn[6],
+    input a[8],
+    input b[8],
+    output ans[8]
+  ) {
+
+  always {
+    case (alufn[3:1]) {
+      b100: // AND
+        ans = a & b;
+      b111: // OR
+        ans = a | b;
+      b011: // XOR
+        ans = a ^ b;
+      b101: // "A"
+        ans = a;
+      default:
+        ans = 8b0;
+    }
+  }
+}

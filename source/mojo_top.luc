@@ -11,8 +11,10 @@ module mojo_top (
   sig rst;                  // reset signal
   sig ans[8];
   
-  adder myAdder;
-  comparer myComparer;
+  adder my_adder;
+  comparer my_comparer;
+  logic_operator my_logic_operator;
+  shifter my_shifter;
 
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
@@ -28,21 +30,33 @@ module mojo_top (
     io_seg = 8hff;          // turn segments off
     io_sel = 4hf;           // select no digits
     
-    myAdder.a[7:0] = io_dip[1];
-    myAdder.b[7:0] = io_dip[0];
-    myAdder.alufn[5:0] = io_dip[2][5:0];
+    my_adder.a = io_dip[1];
+    my_adder.b = io_dip[0];
+    my_adder.alufn = io_dip[2][5:0];
     
-    myComparer.alufn[5:0] = io_dip[2][5:0];
-    myComparer.z = myAdder.cmpz;
-    myComparer.v = myAdder.cmpv;
-    myComparer.n = myAdder.cmpn;
+    my_logic_operator.a = io_dip[1];
+    my_logic_operator.b = io_dip[0];
+    my_logic_operator.alufn = io_dip[2][5:0];
+    
+    my_shifter.a = io_dip[1];
+    my_shifter.b = io_dip[0];
+    my_shifter.alufn = io_dip[2][5:0];
+    
+    my_comparer.alufn = io_dip[2][5:0];
+    my_comparer.z = my_adder.cmpz;
+    my_comparer.v = my_adder.cmpv;
+    my_comparer.n = my_adder.cmpn;
     
 
     case (io_dip[2][5:4]) {
       b00:
-        ans = myAdder.ans;
+        ans = my_adder.ans;
+      b01:
+        ans = my_logic_operator.ans;
+      b10:
+        ans = my_shifter.ans;
       b11:
-        ans = myComparer.ans;
+        ans = my_comparer.ans;
       default:
         ans = 8b0;
     }

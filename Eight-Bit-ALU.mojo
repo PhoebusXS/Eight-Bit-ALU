@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="IOShieldExample" board="Mojo V3" language="Lucid">
+<project name="Eight-Bit-ALU" board="Mojo V3" language="Lucid">
   <files>
+    <src>shifter.luc</src>
+    <src>logic_operator.luc</src>
     <src>comparer.luc</src>
     <src>adder.luc</src>
     <src top="true">mojo_top.luc</src>
