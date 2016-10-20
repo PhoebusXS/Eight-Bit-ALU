@@ -42,11 +42,10 @@ module mojo_top (
     my_shifter.b = io_dip[0];
     my_shifter.alufn = io_dip[2][5:0];
     
-    my_comparer.alufn = io_dip[2][5:0];
     my_comparer.z = my_adder.cmpz;
     my_comparer.v = my_adder.cmpv;
     my_comparer.n = my_adder.cmpn;
-    
+    my_comparer.alufn = io_dip[2][5:0];
 
     case (io_dip[2][5:4]) {
       b00:

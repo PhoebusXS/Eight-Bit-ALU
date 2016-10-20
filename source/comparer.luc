@@ -1,8 +1,8 @@
 module comparer (
-    input alufn[6],
     input z, // ?zero
     input v, // ?overflow
     input n, // ?negative
+    input alufn[6],
     output ans[8]
   ) {
 

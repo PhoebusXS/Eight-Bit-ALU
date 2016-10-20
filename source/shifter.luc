@@ -1,7 +1,7 @@
 module shifter (
     input a[8],
     input b[8],
-    input alufn[5],
+    input alufn[6],
     output ans[8]
   ) {
 
