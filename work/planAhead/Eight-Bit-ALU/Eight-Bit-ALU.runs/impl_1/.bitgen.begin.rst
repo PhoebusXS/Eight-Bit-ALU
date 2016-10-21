@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="bitgen" Owner="PhoebusXS" Host="DESKTOP-CGG6EOR" Pid="14452">
+    </Process>
+</ProcessHandle>
