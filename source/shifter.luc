@@ -11,7 +11,9 @@ module shifter (
     		ans = a << b;
     	b01: // SHR
     		ans = a >> b;
-    	b11: // SHA
+        b10: // signedSHL
+            ans = $signed(a) <<< b;
+    	b11: // signedSHR
     		ans = $signed(a) >>> b;
     	default:
     		ans = a;
