@@ -60,6 +60,9 @@ module mojo_top (
         ans = 8b0;
     }
     
+    io_led[0] = io_dip[0];
+    io_led[1] = io_dip[1];
+    io_led[2] = io_dip[2];
     led = ans;
   }    
 }

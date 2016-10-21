@@ -124,6 +124,9 @@ module mojo_top_0 (
         ans = 8'h00;
       end
     endcase
+    io_led[0+7-:8] = io_dip[0+7-:8];
+    io_led[8+7-:8] = io_dip[8+7-:8];
+    io_led[16+7-:8] = io_dip[16+7-:8];
     led = ans;
   end
 endmodule

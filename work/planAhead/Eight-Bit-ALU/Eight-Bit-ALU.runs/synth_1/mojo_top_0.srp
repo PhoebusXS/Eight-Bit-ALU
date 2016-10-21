@@ -2,8 +2,8 @@ Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -93,7 +93,6 @@ WARNING:Xst:2972 - "C:/Users/PhoebusXS/Documents/GitHub/Eight-Bit-ALU/work/planA
 
 Synthesizing Unit <mojo_top_0>.
     Related source file is "C:/Users/PhoebusXS/Documents/GitHub/Eight-Bit-ALU/work/planAhead/Eight-Bit-ALU/Eight-Bit-ALU.srcs/sources_1/imports/verilog/mojo_top_0.v".
-WARNING:Xst:647 - Input <io_dip<23:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "C:/Users/PhoebusXS/Documents/GitHub/Eight-Bit-ALU/work/planAhead/Eight-Bit-ALU/Eight-Bit-ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 33: Output port <z> of the instance <my_adder> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:/Users/PhoebusXS/Documents/GitHub/Eight-Bit-ALU/work/planAhead/Eight-Bit-ALU/Eight-Bit-ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 33: Output port <v> of the instance <my_adder> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:/Users/PhoebusXS/Documents/GitHub/Eight-Bit-ALU/work/planAhead/Eight-Bit-ALU/Eight-Bit-ALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 33: Output port <n> of the instance <my_adder> is unconnected or connected to loadless signal.
@@ -229,8 +228,7 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 116
-#      GND                         : 1
+# BELS                             : 115
 #      LUT2                        : 10
 #      LUT3                        : 8
 #      LUT4                        : 10
@@ -240,8 +238,8 @@ Primitive and Black Box Usage:
 #      MUXF7                       : 5
 #      VCC                         : 2
 #      XORCY                       : 17
-# IO Buffers                       : 66
-#      IBUF                        : 22
+# IO Buffers                       : 68
+#      IBUF                        : 24
 #      OBUF                        : 44
 
 Device utilization summary:
@@ -263,7 +261,7 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                          70
- Number of bonded IOBs:                  66  out of    102    64%  
+ Number of bonded IOBs:                  68  out of    102    66%  
 
 Specific Feature Utilization:
 
@@ -298,7 +296,7 @@ Speed Grade: -2
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 10.988ns
+   Maximum combinational path delay: 11.005ns
 
 Timing Details:
 ---------------
@@ -306,9 +304,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 677 / 8
+  Total number of paths / destination ports: 701 / 32
 -------------------------------------------------------------------------
-Delay:               10.988ns (Levels of Logic = 7)
+Delay:               11.005ns (Levels of Logic = 7)
   Source:            io_dip<1> (PAD)
   Destination:       led<0> (PAD)
 
@@ -316,7 +314,7 @@ Delay:               10.988ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            27   1.328   1.664  io_dip_1_IBUF (io_dip_1_IBUF)
+     IBUF:I->O            28   1.328   1.681  io_dip_1_IBUF (io_led_1_OBUF)
      LUT3:I0->O            2   0.235   1.002  Sh111 (Sh11)
      LUT6:I2->O            1   0.254   0.682  Mmux_led36 (Mmux_led35)
      LUT6:I5->O            1   0.254   0.682  Mmux_led38_SW0 (N8)
@@ -324,7 +322,7 @@ Delay:               10.988ns (Levels of Logic = 7)
      LUT6:I4->O            1   0.250   0.681  Mmux_led312 (led_0_OBUF)
      OBUF:I->O                 2.912          led_0_OBUF (led<0>)
     ----------------------------------------
-    Total                     10.988ns (5.487ns logic, 5.501ns route)
+    Total                     11.005ns (5.487ns logic, 5.518ns route)
                                        (49.9% logic, 50.1% route)
 
 =========================================================================
@@ -335,14 +333,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.02 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.09 secs
  
 --> 
 
-Total memory usage is 292592 kilobytes
+Total memory usage is 292912 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   11 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

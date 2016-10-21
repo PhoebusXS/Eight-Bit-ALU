@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Oct 21 14:12:44 2016
+// Written by: Map P.20131013 on Fri Oct 21 14:20:37 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -36,8 +36,10 @@ COMP "io_dip[21]" LOCATE = SITE "P66" LEVEL 1;
 COMP "io_sel[1]" LOCATE = SITE "P10" LEVEL 1;
 COMP "io_led[19]" LOCATE = SITE "P21" LEVEL 1;
 COMP "io_dip[14]" LOCATE = SITE "P100" LEVEL 1;
+COMP "io_dip[22]" LOCATE = SITE "P58" LEVEL 1;
 COMP "io_sel[2]" LOCATE = SITE "P7" LEVEL 1;
 COMP "io_dip[15]" LOCATE = SITE "P99" LEVEL 1;
+COMP "io_dip[23]" LOCATE = SITE "P57" LEVEL 1;
 COMP "io_sel[3]" LOCATE = SITE "P12" LEVEL 1;
 COMP "io_dip[16]" LOCATE = SITE "P79" LEVEL 1;
 COMP "io_dip[17]" LOCATE = SITE "P78" LEVEL 1;
@@ -72,7 +74,5 @@ COMP "io_led[9]" LOCATE = SITE "P85" LEVEL 1;
 COMP "io_dip[7]" LOCATE = SITE "P115" LEVEL 1;
 COMP "io_dip[8]" LOCATE = SITE "P112" LEVEL 1;
 COMP "io_dip[9]" LOCATE = SITE "P111" LEVEL 1;
-COMP "io_dip(22)" LOCATE = SITE "P58" LEVEL 1;
-COMP "io_dip(23)" LOCATE = SITE "P57" LEVEL 1;
 SCHEMATIC END;
 

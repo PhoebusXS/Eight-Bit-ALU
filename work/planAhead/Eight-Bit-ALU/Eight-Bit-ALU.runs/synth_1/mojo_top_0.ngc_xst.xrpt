@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Fri Oct 21 14:12:19 2016">
+  <application stringID="Xst" timeStamp="Fri Oct 21 14:20:13 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -99,8 +99,7 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="mojo_top_0.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="116">
-          <item dataType="int" stringID="XST_GND" value="1"/>
+        <item dataType="int" stringID="XST_BELS" value="115">
           <item dataType="int" stringID="XST_LUT2" value="10"/>
           <item dataType="int" stringID="XST_LUT3" value="8"/>
           <item dataType="int" stringID="XST_LUT4" value="10"/>
@@ -111,8 +110,8 @@
           <item dataType="int" stringID="XST_VCC" value="2"/>
           <item dataType="int" stringID="XST_XORCY" value="17"/>
         </item>
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="66">
-          <item dataType="int" stringID="XST_IBUF" value="22"/>
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="68">
+          <item dataType="int" stringID="XST_IBUF" value="24"/>
           <item dataType="int" stringID="XST_OBUF" value="44"/>
         </item>
       </section>
@@ -127,14 +126,14 @@
       <item AVAILABLE="76" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="0"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="70"/>
-      <item AVAILABLE="102" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="66"/>
+      <item AVAILABLE="102" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="68"/>
     </section>
     <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
       <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="11"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="10"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="4"/>
     </section>
   </application>

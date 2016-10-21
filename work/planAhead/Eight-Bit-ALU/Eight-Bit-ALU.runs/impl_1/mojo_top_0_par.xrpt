@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Fri Oct 21 14:12:47 2016">
+  <application stringID="par" timeStamp="Fri Oct 21 14:20:40 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -62,12 +62,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="5 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="5 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="3 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="3 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="5 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="5 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="3 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="3 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -593,7 +593,7 @@
           </row>
           <row stringID="row" value="57">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P57"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(23)"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[23]"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L14N_D12_2"/>
             <item stringID="Direction" value="INPUT"/>
@@ -607,7 +607,7 @@
           </row>
           <row stringID="row" value="58">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P58"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(22)"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[22]"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L14P_D11_2"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1500,12 +1500,12 @@
       <section stringID="PAR_UNROUTES_REPORT">
         <item dataType="int" stringID="PAR_UNROUTED_NETS" value="0"/>
         <item dataType="int" stringID="PAR_TOTAL_SOURCELESS_NETS" value="0"/>
-        <item dataType="int" stringID="PAR_TOTAL_LOADLESS_NETS" value="4"/>
+        <item dataType="int" stringID="PAR_TOTAL_LOADLESS_NETS" value="2"/>
       </section>
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Fri Oct 21 14:12:48 2016">
+  <application stringID="Par" timeStamp="Fri Oct 21 14:20:41 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -1584,10 +1584,10 @@
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="0"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="1430" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="28">
+        <item AVAILABLE="1430" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="25">
           <item AVAILABLE="355" dataType="int" stringID="PAR_NUM_SLICEL" value="10"/>
           <item AVAILABLE="360" dataType="int" stringID="PAR_NUM_SLICEM" value="0"/>
-          <item AVAILABLE="715" dataType="int" stringID="PAR_NUM_SLICEX" value="18"/>
+          <item AVAILABLE="715" dataType="int" stringID="PAR_NUM_SLICEX" value="15"/>
         </item>
         <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="71">
           <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="71"/>
